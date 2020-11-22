@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22085A95256AAC7D006AC7E0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22085A94256AAC7D006AC7E0 /* Currency.swift */; };
+		22085A9A256AAD62006AC7E0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22085A99256AAD62006AC7E0 /* Response.swift */; };
+		22085AA3256AD14C006AC7E0 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22085AA2256AD14C006AC7E0 /* DateExtensions.swift */; };
+		22085AAE256AE242006AC7E0 /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22085AAD256AE242006AC7E0 /* ApplicationExtension.swift */; };
 		22EFE25F256AA03A007A8F30 /* ConvertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFE25E256AA03A007A8F30 /* ConvertyApp.swift */; };
 		22EFE261256AA03A007A8F30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFE260256AA03A007A8F30 /* ContentView.swift */; };
 		22EFE263256AA03A007A8F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EFE262256AA03A007A8F30 /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22085A94256AAC7D006AC7E0 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		22085A99256AAD62006AC7E0 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		22085AA2256AD14C006AC7E0 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		22085AAD256AE242006AC7E0 /* ApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
 		22EFE25B256AA03A007A8F30 /* Converty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EFE25E256AA03A007A8F30 /* ConvertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertyApp.swift; sourceTree = "<group>"; };
 		22EFE260256AA03A007A8F30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22085AA1256AD12A006AC7E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				22085AA2256AD14C006AC7E0 /* DateExtensions.swift */,
+				22085AAD256AE242006AC7E0 /* ApplicationExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		22EFE252256AA03A007A8F30 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +125,13 @@
 		22EFE25D256AA03A007A8F30 /* Converty */ = {
 			isa = PBXGroup;
 			children = (
-				22EFE29B256AA6C3007A8F30 /* Service */,
 				22EFE25E256AA03A007A8F30 /* ConvertyApp.swift */,
+				22EFE29B256AA6C3007A8F30 /* Service */,
 				22EFE29C256AA6CD007A8F30 /* View */,
-				22EFE291256AA491007A8F30 /* Constants.swift */,
 				22EFE2AA256AA701007A8F30 /* ViewModels */,
 				22EFE2AB256AA715007A8F30 /* Model */,
+				22085AA1256AD12A006AC7E0 /* Utils */,
+				22EFE291256AA491007A8F30 /* Constants.swift */,
 				22EFE262256AA03A007A8F30 /* Assets.xcassets */,
 				22EFE267256AA03A007A8F30 /* Info.plist */,
 				22EFE264256AA03A007A8F30 /* Preview Content */,
@@ -176,6 +194,8 @@
 		22EFE2AB256AA715007A8F30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22085A94256AAC7D006AC7E0 /* Currency.swift */,
+				22085A99256AAD62006AC7E0 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,9 +331,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				22EFE261256AA03A007A8F30 /* ContentView.swift in Sources */,
+				22085AAE256AE242006AC7E0 /* ApplicationExtension.swift in Sources */,
+				22085AA3256AD14C006AC7E0 /* DateExtensions.swift in Sources */,
 				22EFE25F256AA03A007A8F30 /* ConvertyApp.swift in Sources */,
 				22EFE29E256AA6E2007A8F30 /* ListView.swift in Sources */,
 				22EFE292256AA491007A8F30 /* Constants.swift in Sources */,
+				22085A9A256AAD62006AC7E0 /* Response.swift in Sources */,
+				22085A95256AAC7D006AC7E0 /* Currency.swift in Sources */,
 				22EFE2A6256AA6FA007A8F30 /* ConvertyViewModel.swift in Sources */,
 				22EFE297256AA6BE007A8F30 /* DataFetcher.swift in Sources */,
 				22EFE2B0256AA792007A8F30 /* APIError.swift in Sources */,

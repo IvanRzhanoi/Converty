@@ -8,6 +8,8 @@
 import Foundation
 
 enum Constants {
-    static let apiURL = ""
+    // TODO: Change to secure URL and change Info.plist to forbid arbitrary loads
+//    static let baseURL = "https://api.currencylayer.com" // <-- Current plan does not support HTTPS encryption
+    static let baseURL = "http://api.currencylayer.com"
     static let apiKey = "37dc7f2a2aad28ce68046909c5cd45f0"
 }

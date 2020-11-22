@@ -7,14 +7,33 @@
 
 import SwiftUI
 
+
 struct ListView: View {
+    
+    @EnvironmentObject var convertyVM: ConvertyViewModel
+    @Binding var showModal: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(convertyVM.currencies, id: \.id) { currency in
+            Button(action: {
+                convertyVM.selectedCurrency = currency
+                convertyVM.fetchQuotes()
+                showModal.toggle()
+            }) {
+                Text("\(currency.source ?? "") | \(currency.name ?? "")")
+            }
+        }
+        .onAppear {
+            // In case fetching the currencies earlier has failed, we try again
+            if convertyVM.currencies.isEmpty {
+                convertyVM.fetchCurrencyList()
+            }
+        }
     }
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ListView(showModal: .constant(true))
     }
 }
