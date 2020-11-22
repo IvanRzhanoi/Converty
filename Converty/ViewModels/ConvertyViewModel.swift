@@ -20,11 +20,6 @@ class ConvertyViewModel: ObservableObject {
     
     init() {
         fetchCurrencyList()
-//        Double("0.0")
-//        $amount.sink(receiveValue: { number in
-//            <#code#>
-//        })
-//        .store(in: &subscriptions)
     }
     
     func fetchCurrencyList() {
