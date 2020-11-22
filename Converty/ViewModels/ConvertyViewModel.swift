@@ -115,13 +115,7 @@ class ConvertyViewModel: ObservableObject {
                 }
                 
                 print("quotes: \(quotes)")
-                var quotesToAdd: [[String: Double]] = []
-                for quote in quotes {
-                    print("Currency code: \(quote.key); quote: \(quote.value)")
-                    let item = [quote.key: quote.value]//Currency(source: quote.key, name: quote.value)
-                    quotesToAdd.append(item)
-                }
-                self.selectedCurrency?.quotes = quotes//quotesToAdd
+                self.selectedCurrency?.quotes = quotes
                 // Setting the current date and time for currency. Later we can see when it was last updated
                 self.selectedCurrency?.timestamp = Date()
                 
